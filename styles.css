@@ -99,7 +99,7 @@ main {
     max-width: 1200px;
     margin: 0 auto;
     padding: 3rem 2rem;
-    background: rgba(254, 253, 251, 0.95);
+    background: rgba(254, 253, 251, 0.7);
     border-radius: 15px;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
 }
