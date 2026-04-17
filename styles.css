@@ -28,9 +28,10 @@ body {
     background-color: #FEFDFB;
     font-weight: 400;
     background-image: 
-        linear-gradient(135deg, transparent 0%, rgba(157, 193, 131, 0.03) 50%, transparent 100%),
-        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><filter id="noise"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="4" result="noise"/></filter></defs><rect width="1000" height="1000" fill="%239DC183" opacity="0.02" filter="url(%23noise)"/></svg>');
+        linear-gradient(180deg, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0.9) 50%, rgba(255,255,255,0.8) 100%),
+        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200"><defs><style>.leaf{fill:%23C4B8A0;opacity:0.06;}</style></defs><g class="leaf"><path d="M100,150 Q130,100 160,150 Q130,180 100,150" transform="translate(50,100)"/><path d="M200,200 Q230,150 260,200 Q230,230 200,200" transform="translate(150,50)"/><path d="M300,100 Q330,50 360,100 Q330,130 300,100" transform="translate(100,200)"/><path d="M150,400 Q180,350 210,400 Q180,430 150,400" transform="translate(200,150)"/><path d="M400,250 Q430,200 460,250 Q430,280 400,250" transform="translate(80,180)"/></g><g class="leaf" transform="scale(-1,1) translate(-1200,0)"><path d="M100,150 Q130,100 160,150 Q130,180 100,150" transform="translate(50,100)"/><path d="M200,200 Q230,150 260,200 Q230,230 200,200" transform="translate(150,50)"/><path d="M300,100 Q330,50 360,100 Q330,130 300,100" transform="translate(100,200)"/></g></svg>');
     background-attachment: fixed;
+    background-repeat: repeat;
 }
 
 /* Header & Navigation */
