@@ -240,12 +240,10 @@ p {
 }
 
 .card {
-    background: linear-gradient(135deg, white 0%, rgba(157, 193, 131, 0.05) 100%);
+    background: transparent;
     padding: 2rem;
     border-radius: 8px;
-    box-shadow: 
-        0 4px 15px rgba(157, 193, 131, 0.1),
-        inset 0 1px 0 rgba(157, 193, 131, 0.2);
+    box-shadow: none;
     transition: all 0.3s ease;
     border-top: 5px solid var(--primary);
     border-left: 3px solid var(--secondary);
