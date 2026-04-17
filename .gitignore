@@ -1,0 +1,19 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Node (if ever needed for build tools)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# OS
+Thumbs.db

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room Matching - Başak & Ahmet's Wedding</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <div class="logo">Başak & Ahmet</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rsvp.html">RSVP</a></li>
+                <li><a href="program.html">Program</a></li>
+                <li><a href="venue.html">Venue</a></li>
+                <li><a href="travel.html">Travel</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="room-matching.html">Room Matching</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="hero">
+            <h1>Room Matching</h1>
+            <p>Connect with fellow guests</p>
+            <div class="decorative-line"></div>
+            <p>Find roommates or groups to share accommodation with</p>
+        </section>
+
+        <section>
+            <h2>About Room Matching</h2>
+            <div class="decorative-line"></div>
+            <p>
+                This is a great way to meet new people, share accommodation costs, or simply make new friends before the wedding! 
+                If you'd like to room with other guests or are looking for people to share a villa with, this page is for you.
+            </p>
+            <p>
+                <strong>How it works:</strong> Fill out the form below to let us know your rooming preferences, 
+                budget, and who you'd like to connect with. We'll facilitate introductions and help groups organize shared accommodation.
+            </p>
+        </section>
+
+        <!-- Room Matching Form -->
+        <section>
+            <h2>Room Matching Form</h2>
+            <div class="decorative-line"></div>
+
+            <form action="https://docs.google.com/forms/d/e/YOUR_GOOGLE_FORM_ID/formResponse" method="POST" style="max-width: 700px;">
+                <!-- Contact Information -->
+                <fieldset style="border: none; padding: 0; margin-bottom: 2rem;">
+                    <legend style="font-size: 1.2rem; color: var(--primary); margin-bottom: 1rem; font-weight: 600;">Your Information</legend>
+
+                    <div class="form-group">
+                        <label for="name">Your Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Your Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number (optional)</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                </fieldset>
+
+                <!-- Rooming Preferences -->
+                <fieldset style="border: none; padding: 0; margin-bottom: 2rem;">
+                    <legend style="font-size: 1.2rem; color: var(--primary); margin-bottom: 1rem; font-weight: 600;">Rooming Preferences</legend>
+
+                    <div class="form-group">
+                        <label for="roomtype">Type of Accommodation Preferred *</label>
+                        <select id="roomtype" name="roomtype" required>
+                            <option value="">Select an option...</option>
+                            <option value="hotel-single">Hotel Room (Single Occupancy)</option>
+                            <option value="hotel-double">Hotel Room (Double/Twin)</option>
+                            <option value="hotel-suite">Hotel Suite</option>
+                            <option value="villa-share">Shared Villa or House</option>
+                            <option value="villa-group">Group Villa Rental</option>
+                            <option value="no-preference">No Specific Preference</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="budget">Budget per person per night (€) *</label>
+                        <select id="budget" name="budget" required>
+                            <option value="">Select a range...</option>
+                            <option value="under-80">Under €80</option>
+                            <option value="80-120">€80-120</option>
+                            <option value="120-150">€120-150</option>
+                            <option value="150-plus">€150+</option>
+                            <option value="flexible">I'm flexible</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="groupsize">Are you traveling as a group? *</label>
+                        <select id="groupsize" name="groupsize" required>
+                            <option value="">Select an option...</option>
+                            <option value="solo">Solo traveler (looking to meet people)</option>
+                            <option value="couple">Couple (2 people)</option>
+                            <option value="small-group">Small group (3-4 people)</option>
+                            <option value="large-group">Large group (5+ people)</option>
+                        </select>
+                    </div>
+                </fieldset>
+
+                <!-- Roommate Preferences -->
+                <fieldset style="border: none; padding: 0; margin-bottom: 2rem;">
+                    <legend style="font-size: 1.2rem; color: var(--primary); margin-bottom: 1rem; font-weight: 600;">Roommate Preferences</legend>
+
+                    <div class="form-group">
+                        <label>Roommate gender preference (if applicable) *</label>
+                        <div class="radio-group">
+                            <label style="font-weight: normal;">
+                                <input type="radio" name="gender-pref" value="no-preference" required>
+                                No Preference
+                            </label>
+                            <label style="font-weight: normal;">
+                                <input type="radio" name="gender-pref" value="female">
+                                Female Roommates
+                            </label>
+                            <label style="font-weight: normal;">
+                                <input type="radio" name="gender-pref" value="male">
+                                Male Roommates
+                            </label>
+                            <label style="font-weight: normal;">
+                                <input type="radio" name="gender-pref" value="mixed">
+                                Mixed Group is Fine
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Your interests or connection to the couple *</label>
+                        <select id="relationship" name="relationship" required>
+                            <option value="">Select an option...</option>
+                            <option value="family-member">Family Member</option>
+                            <option value="close-friend">Close Friend</option>
+                            <option value="friend">Friend</option>
+                            <option value="colleague">Colleague</option>
+                            <option value="distant-relation">Distant Relation/Acquaintance</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="special-notes">Anything else we should know? (hobbies, interests, sleep schedule, etc.)</label>
+                        <textarea id="special-notes" name="special-notes" placeholder="e.g., Early riser, love to socialize, prefer quiet, etc."></textarea>
+                    </div>
+                </fieldset>
+
+                <!-- Specific Requests -->
+                <fieldset style="border: none; padding: 0; margin-bottom: 2rem;">
+                    <legend style="font-size: 1.2rem; color: var(--primary); margin-bottom: 1rem; font-weight: 600;">Special Requests</legend>
+
+                    <div class="form-group">
+                        <label>Would you prefer to room with someone specific? (optional)</label>
+                        <input type="text" name="specific-match" placeholder="Name of guest you'd like to room with">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Are you interested in organizing a group villa? (optional)</label>
+                        <div class="radio-group">
+                            <label style="font-weight: normal;">
+                                <input type="radio" name="group-villa" value="yes">
+                                Yes, I'm interested
+                            </label>
+                            <label style="font-weight: normal;">
+                                <input type="radio" name="group-villa" value="maybe">
+                                Maybe
+                            </label>
+                            <label style="font-weight: normal;">
+                                <input type="radio" name="group-villa" value="no">
+                                No, not interested
+                            </label>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <button type="submit" class="btn" style="width: 100%; padding: 1rem; font-size: 1.1rem; cursor: pointer;">Submit Room Matching Form</button>
+            </form>
+        </section>
+
+        <!-- Info Box -->
+        <section style="background: #E8F5E9; padding: 2rem; border-radius: 10px; margin-top: 2rem;">
+            <h3 style="color: var(--secondary); margin-top: 0;">💡 Room Matching Timeline</h3>
+            <ul style="margin-left: 1rem; margin-top: 1rem;">
+                <li><strong>August 1-10:</strong> Submit room matching form</li>
+                <li><strong>August 15:</strong> We'll provide matches and contact information</li>
+                <li><strong>August 15-September 10:</strong> Coordinate directly with matched guests</li>
+                <li><strong>By September 1:</strong> Finalize accommodation arrangements</li>
+            </ul>
+        </section>
+
+        <!-- Additional Info -->
+        <section style="background: linear-gradient(to bottom, rgba(177, 156, 217, 0.1), rgba(157, 193, 131, 0.1)); padding: 2rem; border-radius: 10px; margin-top: 2rem;">
+            <h3>📌 Important Information</h3>
+            <ul style="margin-left: 1rem; margin-top: 1rem;">
+                <li><strong>No Obligation:</strong> Filling out this form doesn't obligate you to share accommodation. It's just to help facilitate connections.</li>
+                <li><strong>Direct Contact:</strong> Once matched, you'll communicate directly with potential roommates to finalize arrangements.</li>
+                <li><strong>Hotel Booking:</strong> Remember, recommended hotels have special wedding rates. See our <a href="venue.html" style="color: var(--primary);">Venue page</a> for details.</li>
+                <li><strong>Flexible:</strong> If you can't find a match or change your mind, you can always book your own room.</li>
+                <li><strong>Privacy:</strong> We respect everyone's privacy. Contact information will only be shared between matched guests.</li>
+            </ul>
+        </section>
+
+        <!-- Contact -->
+        <section style="text-align: center; margin-top: 3rem;">
+            <h3>Need Help?</h3>
+            <p style="margin-top: 1rem;">
+                📧 Email us at <a href="mailto:info@basakahmet2026.com" style="color: var(--primary); text-decoration: none;">info@basakahmet2026.com</a>
+                <br>
+                We're happy to assist with any room matching questions!
+            </p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="decorative-line"></div>
+        <p style="margin-top: 1rem;">&copy; 2026 Başak & Ahmet's Wedding. All rights reserved.</p>
+        <p style="font-size: 0.95rem; margin-top: 0.5rem; opacity: 0.9;">Made with love for our special day ❤️</p>
+        <div class="social-links">
+            <a href="#" title="Instagram">📷</a>
+            <a href="#" title="Facebook">f</a>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Başak & Ahmet's Wedding</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .faq-item {
+            background: white;
+            border-left: 4px solid var(--primary);
+            padding: 1.5rem;
+            margin: 1rem 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .faq-item:hover {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .faq-item h3 {
+            margin: 0;
+            color: var(--primary);
+            font-size: 1.2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-item.active h3 {
+            color: var(--secondary);
+        }
+
+        .faq-toggle {
+            font-size: 1.5rem;
+            transition: transform 0.3s ease;
+        }
+
+        .faq-item.active .faq-toggle {
+            transform: rotate(180deg);
+        }
+
+        .faq-answer {
+            display: none;
+            margin-top: 1rem;
+            color: var(--text-light);
+            line-height: 1.8;
+        }
+
+        .faq-item.active .faq-answer {
+            display: block;
+            animation: slideDown 0.3s ease;
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .faq-category {
+            margin: 2.5rem 0 1.5rem 0;
+        }
+
+        .faq-category h2 {
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <div class="logo">Başak & Ahmet</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rsvp.html">RSVP</a></li>
+                <li><a href="program.html">Program</a></li>
+                <li><a href="venue.html">Venue</a></li>
+                <li><a href="travel.html">Travel</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="room-matching.html">Room Matching</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="hero">
+            <h1>Frequently Asked Questions</h1>
+            <p>We've answered common questions below</p>
+            <div class="decorative-line"></div>
+            <p>Don't see your question? Feel free to reach out to us directly!</p>
+        </section>
+
+        <!-- FAQ Content -->
+        <div>
+            <!-- General Questions -->
+            <div class="faq-category">
+                <h2>General Questions</h2>
+                <div class="decorative-line" style="margin-bottom: 2rem;"></div>
+
+                <div class="faq-item" onclick="toggleFaq(this)">
+                    <h3>
+                        When is the wedding?
+                        <span class="faq-toggle">▼</span>
+                    </h3>
+                    <div class="faq-answer">
+                        <p>Our wedding celebration is September 10-13, 2026, in Rimini, Italy. The main wedding ceremony and reception are on Saturday, September 12th.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" onclick="toggleFaq(this)">
+                    <h3>
+                        Where is the wedding?
+                        <span class="faq-toggle">▼</span>
+                    </h3>
+                    <div class="faq-answer">
+                        <p>We're getting married in Rimini, Italy - a beautiful coastal city in the Emilia-Romagna region. Specific venue details are available on our Venue page.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" onclick="toggleFaq(this)">
+                    <h3>
+                        When is the RSVP deadline?
+                        <span class="faq-toggle">▼</span>
+                    </h3>
+                    <div class="faq-answer">
+                        <p>Please RSVP by <strong>August 10th, 2026</strong>. This gives us enough time to finalize headcount for catering, seating arrangements, and all other logistics.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" onclick="toggleFaq(this)">
+                    <h3>
+                        How do I RSVP?
+                        <span class="faq-toggle">▼</span>
+                    </h3>
+                    <div class="faq-answer">
+                        <p>Please visit our <a href="rsvp.html" style="color: var(--primary);">RSVP page</a> and fill out the online form. We're using Google Forms for easy response tracking. You'll need to provide your name, email, attendance confirmation, number of guests, and any dietary restrictions.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Travel & Logistics -->
+            <div class="faq-category">
+                <h2>Travel & Logistics</h2>
+                <div class="decorative-line" style="margin-bottom: 2rem;"></div>
+
+                <div class="faq-item" onclick="toggleFaq(this)">
+                    <h3>
+                        How do I get to Rimini?
+                        <span class="faq-toggle">▼</span>
+                    </h3>
+                    <div class="faq-answer">
+                        <p>Most guests fly into either Rimini Federico Fellini Airport (RMI) - closest option, or Bologna Marco Polo Airport (BLQ) with a 2-2.5 hour train ride to Rimini. See our <a href="travel.html" style="color: var(--primary);">Travel & Directions page</a> for detailed information.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" onclick="toggleFaq(this)">
+                    <h3>
+                        Do I need a visa to enter Italy?
+                        <span class="faq-toggle">▼</span>
+                    </h3>
+                    <div class="faq-answer">
+                        <p>EU citizens need a valid passport. For non-EU citizens, visa requirements vary by country. Please check the official Italian government website or contact your nearest Italian embassy for your specific requirements. U.S. citizens can visit for up to 90 days without a visa.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" onclick="toggleFaq(this)">
+                    <h3>
+                        Will there be transportation provided?
+                        <span class="faq-toggle">▼</span>
+                    </h3>
+                    <div class="faq-answer">
+                        <p>Yes! We're providing complimentary shuttle service between hotels and all wedding venues throughout the weekend. Details will be provided in your welcome packet upon arrival.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" onclick="toggleFaq(this)">
+                    <h3>
+                        Can I bring children?
+                        <span class="faq-toggle">▼</span>
+                    </h3>
+                    <div class="faq-answer">
+                        <p>Children are absolutely welcome! Please mention their names and ages when you RSVP so we can ensure they're comfortable. If you have any special needs or requests for your children, please let us know.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Accommodations -->
+            <div class="faq-category">
+                <h2>Accommodations</h2>
+                <div class="decorative-line" style="margin-bottom: 2rem;"></div>
+
+                <div class="faq-item" onclick="toggleFaq(this)">
+                    <h3>
+                        Where should I stay?
+                        <span class="faq-toggle">▼</span>
+                    </h3>
+                    <div class="faq-answer">
+                        <p>We've arranged special rates at several hotels in Rimini. Check out our <a href="venue.html" style="color: var(--primary);">Venue & Accommodations page</a> for a list of recommended hotels with our wedding rates. Mention "Başak & Ahmet Wedding" when booking to receive the special rate.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" onclick="toggleFaq(this)">
+                    <h3>
+                        How much do hotels cost?
+                        <span class="faq-toggle">▼</span>
+                    </h3>
+                    <div class="faq-answer">
+                        <p>Our partner hotels offer rates ranging from €90-150 per night depending on the hotel category. We have options for different budgets and preferences. See the Venue page for details on each property.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" onclick="toggleFaq(this)">
+                    <h3>
+                        Can I stay outside of the recommended hotels?
+                        <span class="faq-toggle">▼</span>
+                    </h3>
+                    <div class="faq-answer">
+                        <p>Of course! While we've negotiated special rates at the listed hotels, you're welcome to stay anywhere in or around Rimini. Just note that shuttle service will primarily serve the partner hotels.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" onclick="toggleFaq(this)">
+                    <h3>
+                        Can you help arrange accommodations for a large group?
+                        <span class="faq-toggle">▼</span>
+                    </h3>
+                    <div class="faq-answer">
+                        <p>Absolutely! If you're organizing accommodation for a group, please reach out to us at <a href="mailto:info@basakahmet2026.com" style="color: var(--primary);">info@basakahmet2026.com</a>. We can help coordinate with hotels or look at villa rental options.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Wedding Details -->
+            <div class="faq-category">
+                <h2>Wedding Details</h2>
+                <div class="decorative-line" style="margin-bottom: 2rem;"></div>
+
+                <div class="faq-item" onclick="toggleFaq(this)">
+                    <h3>
+                        What is the dress code?
+                        <span class="faq-toggle">▼</span>
+                    </h3>
+                    <div class="faq-answer">
+                        <p><strong>Welcome Dinner (Thursday):</strong> Cocktail Attire<br><strong>Welcome Party (Friday):</strong> Cocktail Attire<br><strong>Wedding Day (Saturday):</strong> Black Tie Optional (formal but doesn't require a tuxedo)</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" onclick="toggleFaq(this)">
+                    <h3>
+                        What time should I arrive for the ceremony?
+                        <span class="faq-toggle">▼</span>
+                    </h3>
+                    <div class="faq-answer">
+                        <p>Please arrive by 2:45 PM for the Saturday ceremony which begins at 3:00 PM. The shuttle service will depart from hotels starting at 2:15 PM, so plan accordingly.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" onclick="toggleFaq(this)">
+                    <h3>
+                        What is the weather like in September?
+                        <span class="faq-toggle">▼</span>
+                    </h3>
+                    <div class="faq-answer">
+                        <p>September in Rimini is wonderful! Expect warm, pleasant weather with temperatures around 25-27°C (77-81°F). The Adriatic Sea is still warm for swimming. Pack light clothing, sunscreen, sunglasses, and comfortable walking shoes.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" onclick="toggleFaq(this)">
+                    <h3>
+                        Can I take photos during the ceremony?
+                        <span class="faq-toggle">▼</span>
+                    </h3>
+                    <div class="faq-answer">
+                        <p>We appreciate your enthusiasm! During the ceremony, please refrain from taking photos so our photographer can capture perfect moments. However, feel free to take photos during the cocktail hour and reception.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" onclick="toggleFaq(this)">
+                    <h3>
+                        Will there be a rehearsal?
+                        <span class="faq-toggle">▼</span>
+                    </h3>
+                    <div class="faq-answer">
+                        <p>Yes! Scheduled for Friday, September 11th. The rehearsal is optional but recommended, especially for those in the wedding party. Details will be sent to you via email.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Food & Drinks -->
+            <div class="faq-category">
+                <h2>Food & Drinks</h2>
+                <div class="decorative-line" style="margin-bottom: 2rem;"></div>
+
+                <div class="faq-item" onclick="toggleFaq(this)">
+                    <h3>
+                        What about dietary restrictions?
+                        <span class="faq-toggle">▼</span>
+                    </h3>
+                    <div class="faq-answer">
+                        <p>We absolutely accommodate dietary restrictions and allergies! Please indicate them clearly when you RSVP. We can provide vegetarian, vegan, gluten-free, and other special meal options. Please be specific about your needs.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" onclick="toggleFaq(this)">
+                    <h3>
+                        Will alcohol be served?
+                        <span class="faq-toggle">▼</span>
+                    </h3>
+                    <div class="faq-answer">
+                        <p>Yes, a full bar with wine, beer, and cocktails will be available at all events. Non-alcoholic beverages and soft drinks will also be available throughout.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" onclick="toggleFaq(this)">
+                    <h3>
+                        What will we be eating?
+                        <span class="faq-toggle">▼</span>
+                    </h3>
+                    <div class="faq-answer">
+                        <p>Our menu features authentic Italian cuisine with a focus on Emilia-Romagna regional specialties. We're combining traditional dishes with modern preparation. A detailed menu will be sent to you in advance.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Other Questions -->
+            <div class="faq-category">
+                <h2>Other Questions</h2>
+                <div class="decorative-line" style="margin-bottom: 2rem;"></div>
+
+                <div class="faq-item" onclick="toggleFaq(this)">
+                    <h3>
+                        Can I bring a plus-one?
+                        <span class="faq-toggle">▼</span>
+                    </h3>
+                    <div class="faq-answer">
+                        <p>We're providing a plus-one option for single guests. Please indicate this when you RSVP, and provide your guest's name. If you're unsure whether you'll have someone to bring, you can confirm later on the RSVP form.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" onclick="toggleFaq(this)">
+                    <h3>
+                        Will there be live music or dancing?
+                        <span class="faq-toggle">▼</span>
+                    </h3>
+                    <div class="faq-answer">
+                        <p>Yes! We'll have live music during dinner and a fantastic DJ for dancing after dinner. We're planning a celebration that will go well into the night!</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" onclick="toggleFaq(this)">
+                    <h3>
+                        Is there a gift registry?
+                        <span class="faq-toggle">▼</span>
+                    </h3>
+                    <div class="faq-answer">
+                        <p>Your presence is the present! However, if you'd like to give a gift, we're grateful for anything. We'll have registry information coming soon on this website.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" onclick="toggleFaq(this)">
+                    <h3>
+                        What if I have a question not answered here?
+                        <span class="faq-toggle">▼</span>
+                    </h3>
+                    <div class="faq-answer">
+                        <p>Please reach out to us directly! Email us at <a href="mailto:info@basakahmet2026.com" style="color: var(--primary);">info@basakahmet2026.com</a> or fill out the contact form. We're happy to answer any questions you have.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Call-to-Action -->
+        <section style="background: linear-gradient(to bottom, rgba(177, 156, 217, 0.1), rgba(157, 193, 131, 0.1)); padding: 2rem; border-radius: 10px; text-align: center; margin-top: 3rem;">
+            <h3>Still have questions?</h3>
+            <p style="margin-top: 1rem;">Don't hesitate to reach out - we're here to help make sure you have an amazing weekend!</p>
+            <p style="margin-top: 0.5rem;">📧 <a href="mailto:info@basakahmet2026.com" style="color: var(--primary); text-decoration: none;">info@basakahmet2026.com</a></p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="decorative-line"></div>
+        <p style="margin-top: 1rem;">&copy; 2026 Başak & Ahmet's Wedding. All rights reserved.</p>
+        <p style="font-size: 0.95rem; margin-top: 0.5rem; opacity: 0.9;">Made with love for our special day ❤️</p>
+        <div class="social-links">
+            <a href="#" title="Instagram">📷</a>
+            <a href="#" title="Facebook">f</a>
+        </div>
+    </footer>
+
+    <script>
+        function toggleFaq(element) {
+            // Close all other FAQ items
+            const allItems = document.querySelectorAll('.faq-item');
+            allItems.forEach(item => {
+                if (item !== element) {
+                    item.classList.remove('active');
+                }
+            });
+            
+            // Toggle current item
+            element.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
