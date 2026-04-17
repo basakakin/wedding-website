@@ -1,5 +1,7 @@
 /* Başak & Ahmet's Wedding Website - Romantic/Vintage Aesthetic */
 
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
+
 :root {
     --primary: #B19CD9;        /* Lilac */
     --secondary: #9DC183;      /* Sage Green */
@@ -46,10 +48,11 @@ nav {
 }
 
 .logo {
-    font-size: 1.8rem;
-    font-weight: bold;
+    font-family: 'Tangerine', cursive;
+    font-size: 3rem;
+    font-weight: 700;
     color: white;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 }
 
 .nav-links {
@@ -118,10 +121,11 @@ section {
 }
 
 h1 {
-    font-size: 3rem;
+    font-family: 'Tangerine', cursive;
+    font-size: 5rem;
     color: var(--primary);
     margin-bottom: 1rem;
-    font-weight: normal;
+    font-weight: 700;
     letter-spacing: 1px;
 }
 
@@ -334,6 +338,26 @@ textarea {
     justify-content: center;
     color: white;
     font-size: 3rem;
+}
+
+/* Bridgerton-style image frame */
+.bridgerton-frame {
+    position: relative;
+    display: inline-block;
+    padding: 25px;
+    background: linear-gradient(135deg, var(--gold) 0%, #E8D5B5 50%, var(--gold) 100%);
+    border: 2px solid var(--gold);
+    border-radius: 5px;
+    box-shadow: 
+        0 0 0 1px var(--gold),
+        inset 0 0 0 2px #E8D5B5,
+        0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.bridgerton-frame img {
+    display: block;
+    border: 2px solid #FFF;
+    border-radius: 3px;
 }
 
 /* Timeline/Program */
