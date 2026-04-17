@@ -27,7 +27,7 @@ body {
     color: var(--text-dark);
     background-color: #FEFDFB;
     font-weight: 400;
-    background-image: url('assets/images/chatgpt-logo.png');
+    background-image: url('assets/images/background.png');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
